@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="icon" href="images/favicon.iso.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,
+    400;0,500;0,700;0,900;1,300;1,400;1,500;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+    <h1>Shopping Cart</h1>
+
+    <div class="cart">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th>Remove</th>
+                    <th>Image</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+    <tbody>
+        <tr>
+          <td data-label="Remove"><a href="#"><i class="far fa-times-circle"></i></a></td>
+          <td data-label="Image"><img src="images/Bomber.png" alt="Bomber Jacket"></td>
+          <td data-label="Product">Bomber Jacket</td>
+          <td data-label="Price">R1500.00</td>
+          <td data-label="Quantity">
+              <input type="number" value="1" min="1">
+          </td>
+          <td data-label="Total">R1500.00</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<div class="cart-add">
+    <div class="coupon">
+        <h3>Apply Coupon</h3>
+        <input type="text" placeholder="Enter your coupon code">
+        <button class="apply-coupon">Apply</button>
+    </div>
+</div>
+<div class="cart-total">
+    <h3>Cart Totals</h3>
+    <table>
+        <tr>
+            <td>Cart Subtotal</td>
+            <td>R1500.00</td>
+        </tr>
+        <tr>
+        <td>Shipping</td>
+        <td>R100.00</td>
+        </tr>
+        <tr>
+            <td><strong>Grand Total</strong></td>
+            <td><strong>R1600.00</strong></td>
+        </tr>
+    </table>
+    <button class="proceed-to-checkout">Proceed to Checkout</button>
+</div>
+<!-- Back to Top Button -->
+<button id="backToTop" title="Back to Top">&#8679;</button>
+<script src="script.js"></script>
+</body>
+</html>

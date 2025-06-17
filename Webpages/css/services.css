@@ -1,0 +1,121 @@
+/* Styles for the Services page */
+main{
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: black;
+    background-image: url(../images/G.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product h3 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.product p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.add-to-bag {
+    background-color: var(--site-color-01);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.add-to-bag:hover {
+    background-color: #ff6600;
+}
+
+.proceed-to-bank {
+    display: block;
+    background-color: var(--site-color-01);
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    border-radius: 4px;
+    font-size: 18px;
+    margin: 20px auto;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.proceed-to-bank:hover {
+    background-color: #ff6600;
+}
+.size{
+   background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.quantity{
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  .product {
+    width: 95vw;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  .product h2 {
+    font-size: 1.2rem;
+  }
+  .product p, .add-to-bag, .proceed-to-bank, .size, .quantity {
+    font-size: 1rem;
+    padding: 8px;
+  }
+}

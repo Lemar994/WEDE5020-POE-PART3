@@ -1,0 +1,112 @@
+/* Styles for the Index page */
+main{
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: black;
+    background-image: url(../images/G.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+main .main-intro h1{
+    margin-bottom: 20px;
+    font-size: 9.6rem;
+    line-height: 1.1;
+}
+
+main  p{
+    font-size: 1.8rem;
+    line-height: 1.75;
+}
+
+main .main-quotes p{
+   border-left: 4px solid var(--site-color-01);
+   padding-left: 20px;
+    margin-left: 40px 0;
+}
+
+
+main a{
+    margin-top: 30px;
+    font-size: 1.8rem;
+    display: block;
+    background-color: var(--site-color-01);
+    padding:10px 20px;
+    width: fit-content;
+}
+
+
+
+main .main-quotes p:nth-child(2){
+    margin-left: 100px;
+}
+
+main .main-intro {
+   position: relative;
+   right: 10vh;
+   padding-bottom: 8vh;
+}
+
+main .main-quotes {
+  position: relative;
+  left: 10vh;
+  padding-bottom: 8vh;
+
+}
+.main-intro-button {
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: var(--site-color-01);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s;
+}
+
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 20px 0;
+  }
+  .main-intro, .main-quotes {
+    position: static;
+    right: 0;
+    left: 0;
+    padding-bottom: 4vh;
+    width: 100%;
+    margin: 0;
+  }
+  .main-intro h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .main-intro p, .main-quotes p {
+    font-size: 1.2rem;
+    text-align: center;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .main-quotes p {
+    border-left: none;
+    margin-left: 0;
+  }
+  .main-quotes p:nth-child(2) {
+    margin-left: 0;
+  }
+  .main-intro-button {
+    font-size: 1rem;
+    padding: 10px 16px;
+    margin: 0 auto;
+    display: block;
+  }
+}

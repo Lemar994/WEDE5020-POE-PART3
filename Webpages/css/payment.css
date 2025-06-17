@@ -1,0 +1,170 @@
+/* Styles for the Payment page */
+
+main {
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: black;
+    background-image: url(../images/G.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+main .main-intro h1 {
+    margin-bottom: 20px;
+    font-size: 96px;
+    line-height: 106px;
+}
+
+main p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+main a {
+    margin-top: 30px;
+    font-size: 18px;
+    display: block;
+    background-color: var(--site-color-01);
+    padding: 10px 20px;
+    width: fit-content;
+}
+
+main .main-intro {
+    position: relative;
+    right: 10vh;
+    padding-bottom: 8vh;
+}
+
+
+.bank-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.bank-options label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.bank-options select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    width: 100%;
+    max-width: 300px;
+}
+
+.bank-options select:focus {
+    outline: none;
+    border-color: var(--site-color-01);
+    box-shadow: 0 0 5px var(--site-color-01);
+}
+
+/* Styles for payment info section */
+.payment-info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.payment-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.payment-info label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.payment-info input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.payment-info button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--site-color-01);
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.payment-info button:hover {
+    background-color: var(--site-color-01);
+}
+.payment-option{
+   background-color:red;
+    color: rgb(250, 249, 249);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 20px 0;
+  }
+  .main-intro {
+    position: static;
+    right: 0;
+    left: 0;
+    padding-bottom: 4vh;
+    width: 100%;
+    margin: 0;
+  }
+  .main-intro h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-left: 0;
+  }
+  main p {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-left: 0;
+  }
+  main a {
+    font-size: 1rem;
+    margin: 0 auto;
+    display: block;
+  }
+  .bank-options, .payment-info {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" href="images/favicon.iso.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/signUp.css">
+
+</head>
+<body>
+    <!--This is my sign up page-->
+    <div class="sign-up-container">
+
+        <h1>Sign Up</h1>
+  
+    <form action="contact.php" method="post">
+        <label for="name">Name:<span style="color:red">*</span></label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="number">Phone number:<span style="color:red">*</span></label><br>
+        <input type="number" id="number" name="number" required><br>
+        <label for="email">Email:<span style="color:red">*</span></label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password">Password:<span style="color:red">*</span></label><br>
+        <input type="password" id="password" name="password" required><br>
+        <label for="confirm_password">Confirm Password:<span style="color:red">*</span></label><br>
+        <input type="password" id="confirm_password" name="confirm_password" required><br>
+        <button type="submit">Sign Up</button> 
+        <!--This is a link to the sign in page-->
+        <p>Already have a account:<a href="signIn.html">Click here</a></p>
+
+    </form>
+    </div>
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Back to Top">&#8679;</button>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vault's Archive</title>
+        <link rel="icon" href="images/favicon.iso.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/services.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+
+   
+</head>
+<body>
+    <!--This is my navigation with my logo -->
+    <header class="header-main">
+        <div class="header-main-logo">
+            <img src="images/Logo.png" alt="Vault logo">
+            <nav class="header-main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="signUp.html">Sign Up</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h1>Welcome to Vault's Archive.</h1>
+
+    <main>
+        <!--This is the main content of the page the products that I sell-->
+        <div class="product-container">
+            
+            <div class="product">
+                <h2>Bomber Jacket</h2>
+                <img src="images/Bomber.png" alt="Bomber Jacket">
+                <p>Colour:Beige,</p>
+                <p>Material: Silk,Satin and Neoprene,Black Vault Branding</p>
+                <p>Price: R1,500.00</p>
+                <input type="number" class="quantity" value="1"><br>
+                <select class="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select><br>
+                <button class="add-to-bag" onclick="addToBag('Bomber Jacket')">Add to Bag</button>
+                <button class="proceed-to-bank" onclick="proceedToBank()">Proceed to Bank</button>
+         
+            </div>
+
+           
+            <div class="product">
+                <h2>Vault Cap</h2>
+                <img src="images/Cap.png" alt="Vault Cap">
+                <p>Colour:Earth Tone Beige</p>
+                <p>Material:Cotton and Polyester, Vault logo</p>
+                <p>Price: R500.00</p>
+                <input type="number" class="quantity" value="1"><br>
+                <select class="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select><br>
+                <button class="add-to-bag" onclick="addToBag('Vault Cap')">Add to Bag</button>
+                <button class="proceed-to-bank" onclick="proceedToBank()">Proceed to Bank</button>
+                
+            </div>
+
+           
+            <div class="product">
+                <h2>Vault Hoodie</h2>
+                <img src="images/Hoodie.png" alt="Vault Hoodie">
+                <p>Colour:Beige</p>
+                <p>Material: Cotton , Vault graphic</p>
+                <p>Price: R1,200.00</p>
+                <input type="number" class="quantity" value="1"><br>
+                <select class="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select><br>
+                <button class="add-to-bag" onclick="addToBag('Vault Hoodie')">Add to Bag</button>
+                <button class="proceed-to-bank" onclick="proceedToBank()">Proceed to Bank</button>
+               
+            </div>
+
+            <div class="product">
+                <h2>Vault Tank Top</h2>
+                <img src="images/tank top.png" alt="tank top">
+                <p>Colour:Black</p>
+                <p>Material:Cotton</p>
+                <p>Price: R150.00</p>
+                <input type="number" class="quantity" value="1"><br>
+                <select class="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select><br>
+                <button class="add-to-bag" onclick="addToBag('Vault Tank Top')">Add to Bag</button>
+                <button class="proceed-to-bank" onclick="proceedToBank()">Proceed to Bank</button>
+               
+            </div>
+
+            <div class="product">
+                <h2>Vault Graphic T-shirt</h2>
+                <img src="images/T-shirt.png" alt="Vault graphic">
+                <p>Colour:Black</p>
+                <p>Material: Cotton , Vault graphic</p>
+                <p>Price: R200.00</p>
+                <input type="number" class="quantity" value="1"><br>
+                <select class="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select><br>
+                <button class="add-to-bag" onclick="addToBag('Vault graphic')">Add to Bag</button>
+                <button class="proceed-to-bank" onclick="proceedToBank()">Proceed to Bank</button>
+               
+            </div>
+
+            <div class="product">
+                <h2>Vault T-shirt</h2>
+                <img src="images/T-shirt(1).png" alt="Vault T-shirt">
+                <p>Colour:Beige</p>
+                <p>Material:Cotton ,Black Vault branding</p>
+                <p>Price: R200.00</p>
+                <input type="number" class="quantity" value="1"><br>
+                <select class="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select><br>
+                <button class="add-to-bag" onclick="addToBag('Vault T-shirt')">Add to Bag</button>
+                <button class="proceed-to-bank" onclick="proceedToBank()">Proceed to Bank</button>
+               
+            </div>
+
+            <div class="product">
+                <h2>Black Vault Jersey</h2>
+                <img src="images/Jersey.png" alt="Vault Jersey">
+                <p>Colour:Black</p>
+                <p>Material: Cotton , White Vault branding</p>
+                <p>Price: R1,000.00</p>
+                <input type="number" class="quantity" value="1"><br>
+                <select class="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select><br>
+                <button class="add-to-bag" onclick="addToBag('Vault Jersey')">Add to Bag</button>
+                <button class="proceed-to-bank" onclick="window.location.href='cart.html'">Proceed to Bank</button>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Back to Top">&#8679;</button>
+
+    <footer class="footer-main">
+        <p>&copy; <span id="currentYear"></span> Vault9. All rights reserved.</p>
+    </footer>
+    <script>
+        // Auto-update year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        // Placeholder functions for buttons
+        function addToBag(product) {
+            alert(product + ' added to bag!');
+        }
+        function proceedToBank() {
+            alert('Proceeding to bank...');
+        }
+
+        // Back to Top button functionality
+        const backToTopButton = document.getElementById('backToTop');
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        };
+
+        backToTopButton.onclick = function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        };
+    </script>
+</body>
+</html>

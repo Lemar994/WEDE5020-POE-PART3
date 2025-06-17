@@ -1,0 +1,98 @@
+/* Styles for the About page */
+
+/* Main container styles */
+main {
+    width: 100%; /* Full width of the container */
+    background-color: black; /* Solid black background color */
+    background-image: url(../images/G.png); /* Background image from the specified path */
+    background-size: cover; /* Cover the entire area of the main element */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-position: center; /* Center the background image */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    z-index: 100; /* Stack order of the main element */
+}
+
+/* Styles for the main introduction heading */
+main .main-intro h1 {
+    margin-left: 90px; /* Left margin for spacing */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+    font-size: 50px; /* Font size for the heading */
+    line-height: 86px; /* Line height for better readability */
+}
+
+/* Styles for paragraphs within the main section */
+main p {
+    margin-left: 80px; /* Left margin for spacing */
+    font-size: 18px; /* Font size for paragraphs */
+    line-height: 30px; /* Line height for better readability */
+}
+
+/* Styles for anchor links within the main section */
+main a {
+    margin-top: 30px; /* Top margin for spacing */
+    font-size: 18px; /* Font size for links */
+    display: block; /* Display links as block elements */
+    background-color: var(--site-color-01); /* Background color using a CSS variable */
+    padding: 10px 20px; /* Padding for the link */
+    width: fit-content; /* Width adjusts to the content size */
+}
+
+/* Styles for the main introduction container */
+main .main-intro {
+    position: relative; /* Position relative for positioning child elements */
+    right: 10vh; /* Move the container 10vh to the right */
+    padding-bottom: 8vh; /* Bottom padding for spacing */
+}
+
+/* General styles for anchor links */
+a {
+    font-size: 26px; /* Font size for links */
+    line-height: 32px; /* Line height for better readability */
+    color: rgb(8, 8, 8); /* Text color for links */
+    font-family: Roboto; /* Font family for links */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Header block styles */
+.header-main {
+    width: 100%; /* Full width of the header */
+    height: 60px; /* Fixed height for the header */
+    background-color: #fefdfd; /* Light background color for the header */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out child elements evenly */
+}
+
+/* Responsive styles for mobile/tablet screens */
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 20px 0;
+  }
+  .main-intro {
+    position: static;
+    right: 0;
+    left: 0;
+    padding-bottom: 4vh;
+    width: 100%;
+    margin: 0;
+  }
+  .main-intro h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-left: 0;
+  }
+  main p {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-left: 0;
+  }
+  main a {
+    font-size: 1rem;
+    margin: 0 auto;
+    display: block;
+  }
+}
