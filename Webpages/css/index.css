@@ -59,16 +59,16 @@ main .main-quotes {
 
 }
 .main-intro-button {
-    font-size: 14px;
-    font-weight: 600;
-    border-radius: 4px;
-    background-color: var(--site-color-01);
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    transition: 0.2s;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  background-color: var(--site-color-01);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s;
 }
 
 @media (max-width: 900px) {
