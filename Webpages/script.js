@@ -18,23 +18,31 @@ if (document.querySelector('.cart')) {
       });
     });
   
-    // Calculate and update cart total
-    function updateCartTotal() {
-      let total = 0;
-      document.querySelectorAll('.cart tbody tr').forEach(row => {
-        const price = parseFloat(row.children[3].textContent.replace('R', '').replace(',', ''));
-        const qty = parseInt(row.querySelector('input[type="number"]').value, 10);
-        if (!isNaN(price) && !isNaN(qty)) {
-          row.children[5].textContent = 'R' + (price * qty).toFixed(2);
-          total += price * qty;
-        }
-      });
-      // Optionally update a cart total summary here
+// Calculate and update cart total
+function updateCartTotal() {
+  let total = 0;
+  document.querySelectorAll('.cart tbody tr').forEach(row => {
+    const price = parseFloat(row.children[3].textContent.replace('R', '').replace(',', ''));
+    const qty = parseInt(row.querySelector('input[type="number"]').value, 10);
+    if (!isNaN(price) && !isNaN(qty)) {
+      row.children[5].textContent = 'R' + (price * qty).toFixed(2);
+      total += price * qty;
     }
-    // Initial calculation
-    updateCartTotal();
+  });
+  // Auto-update Cart Subtotal and Grand Total
+  const subtotalCell = document.querySelector('.cart-total table tr:nth-child(1) td:nth-child(2)');
+  const shippingCell = document.querySelector('.cart-total table tr:nth-child(2) td:nth-child(2)');
+  const grandTotalCell = document.querySelector('.cart-total table tr:nth-child(3) td:nth-child(2) strong');
+  if (subtotalCell) subtotalCell.textContent = 'R' + total.toFixed(2);
+  let shipping = 0;
+  if (shippingCell) {
+    shipping = parseFloat(shippingCell.textContent.replace('R', '').replace(',', '')) || 0;
   }
-  
+  if (grandTotalCell) grandTotalCell.textContent = 'R' + (total + shipping).toFixed(2);
+}
+// Initial calculation
+updateCartTotal();
+}
   // --- Services Page Functionality ---
   if (document.querySelectorAll('.add-to-bag').length > 0) {
     document.querySelectorAll('.add-to-bag').forEach(btn => {
